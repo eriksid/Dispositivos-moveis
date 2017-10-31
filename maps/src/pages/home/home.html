@@ -3,9 +3,13 @@
     <ion-title>
       Maps
     </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="marcarLocal()">+</button>
+      <button ion-button (click)="desmarcarLocal()">-</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content >
-  <div></div>
+  <div #Map id="map"></div>
 </ion-content>
